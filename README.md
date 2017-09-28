@@ -2,8 +2,14 @@
 A repo for posting screen shots to Twitter.
 
 ## examples
-I posted [these tweets](.make.R) using the files in this repo +
+I posted [the tweets pictured below](.make.R) using files in this repo +
 [rtweet](https://github.com/mkearney/rtweet).
+
+![](img/tw1.png)
+
+![](img/tw2.png)
+
+![](img/tw3.png)
 
 ## inspiration
 This repo was inspired by wonderful research tweets frequently posted
