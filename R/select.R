@@ -5,6 +5,13 @@ SS_PAT <- function() {
   ), "(?<=[^\\/]{1})\\/", perl = TRUE)[[1]]))
 }
 
+set_SS_PAT <- function(path = "~/Documents/screenshots") {
+  paste(
+    "defaults write com.apple.screencapture location",
+    path
+  )
+}
+
 ss_save_as <- function() {
   filename <- paste0(
     format(Sys.time(), "screenshot-%Y%m%d%H%M%S"),
@@ -22,7 +29,7 @@ read_ss_timestamp <- function(x) {
 }
 
 list_ss_files <- function(full = FALSE) {
-  list.files(SS_PAT(), pattern = "^screenshot-|^Screen Shot", full.names = full)
+  list.files(SS_PAT(), pattern = "^screenshot|^Screen Shot", full.names = full)
 }
 
 

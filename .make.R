@@ -25,3 +25,10 @@ nchar(txt)
 
 tweet_with_media(txt, media)
 
+
+
+media <- get_recent_ss("60 mins")
+
+txt <- "Comparing Trump and Clinton’s Facebook pages during the election, by Rob http://rforjournalists.com/2017/09/10/comparing-donald-trump-and-hillary-clintons-facebook-pages-during-the-us-presidential-election-2016/"
+
+tweet_with_media(txt, media)
